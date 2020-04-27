@@ -7,13 +7,25 @@
             </li>
             <li class="header">Пользователи</li>
             <li <?=($_SERVER['PHP_SELF']=='/list-teacher.php')?'class="active"':'';?>>
-                <a href="list-teacher.php"><i class="fa fa-users"></i><span>Питомец зоопарка</span></a>
+                <a href="ListPitomec.php"><i class="fa fa-users"></i><span>Питомец зоопарка</span></a>
             </li>
             <li <?=($_SERVER['PHP_SELF']=='/list-student.php')?'class="active"':'';?>>
-                <a href="list-student.php"><i class="fa fa-users"></i><span>Список сотрудников</span></a>
+                <a href="ListRacion.php"><i class="fa fa-users"></i><span>Список рационов</span></a>
             </li>
             <li <?=($_SERVER['PHP_SELF']=='/list-student.php')?'class="active"':'';?>>
-                <a href="list-student.php"><i class="fa fa-users"></i><span>Перечень животных</span></a>
+                <a href="ListSotrydnik.php"><i class="fa fa-users"></i><span>Список сотрудников</span></a>
+            </li>
+            <li <?=($_SERVER['PHP_SELF']=='/list-student.php')?'class="active"':'';?>>
+                <a href="ListSvedenie.php"><i class="fa fa-users"></i><span>Сведение о животных</span></a>
+            </li>
+            <li <?=($_SERVER['PHP_SELF']=='/list-student.php')?'class="active"':'';?>>
+                <a href="ListTip.php"><i class="fa fa-users"></i><span>Тип животных</span></a>
+            </li>
+            <li <?=($_SERVER['PHP_SELF']=='/list-student.php')?'class="active"':'';?>>
+                <a href="ListVid.php"><i class="fa fa-users"></i><span>Вид животных</span></a>
+            </li>
+            <li <?=($_SERVER['PHP_SELF']=='/list-student.php')?'class="active"':'';?>>
+                <a href="ListZona.php"><i class="fa fa-users"></i><span>Зона обитания</span></a>
             </li>
         </ul>
     </section>
