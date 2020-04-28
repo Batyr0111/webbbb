@@ -29,7 +29,7 @@
 <!-- /.box-header -->
 <div class="box-body">
 <?php
-if ($racion) {
+if ($vid) {
 ?>
 
 <table id="example2" class="table table-bordered table-hover">

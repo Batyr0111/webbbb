@@ -29,7 +29,7 @@
 <!-- /.box-header -->
 <div class="box-body">
 <?php
-if ($racion) {
+if ($sotrydnik) {
 ?>
 
 <table id="example2" class="table table-bordered table-hover">
@@ -53,11 +53,15 @@ if ($racion) {
 foreach ($sotrydnik as $sotrydnik) {
 echo '<tr>';
 echo '<td><a href="profile-
-sotrydnik.php?id='.$sotrydnik->Номер.'">'.$sotrydnik->Наименование.'</a> '. '<a href="add-racion.php?id='.$sotrydnik->Фамилия.'"><i class="fa fa-pencil"></i></a></td>';
+sotrydnik.php?id='.$sotrydnik->Номер.'">'.$sotrydnik->Фамилия.'</a> '. '<a href="add-racion.php?id='.$sotrydnik->Имя.'"><i class="fa fa-pencil"></i></a></td>';
 
-echo '<td>'.$sotrydnik->Наименование.'</td>';
-echo '<td>'.$sotrydnik->Список_продуктов.'</td>';
-echo '<td>'.$sotrydnik->Номер_типа.'</td>';
+echo '<td>'.$sotrydnik->Отчество.'</td>';
+echo '<td>'.$sotrydnik->Дата_рождения.'</td>';
+echo '<td>'.$sotrydnik->Пол.'</td>';
+echo '<td>'.$sotrydnik->Телефон.'</td>';
+echo '<td>'.$sotrydnik->Семейное_положение.'</td>';
+echo '<td>'.$sotrydnik->Должность.'</td>';
+echo '<td>'.$sotrydnik->Код_супруга.'</td>';
 echo '</tr>';
 }
 ?>

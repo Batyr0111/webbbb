@@ -1,8 +1,8 @@
 <?php
     class RacionMap extends BaseMap{
         public function findAll($ofset=0, $limit=30){
-            $res1 = $this->db->query("SELECT Номер_рациона, Наименование, Список_продуктов, Номер_типа FROM  LIMIT $ofset, $limit");
-            return $res->fetchAll(PDO::FETCH_OBJ);
+            $res1 = $this->db->query("SELECT Номер_рациона, Наименование, Список_продуктов, Номер_типа FROM racion LIMIT $ofset, $limit");
+            return $res1->fetchAll(PDO::FETCH_OBJ);
         }
     
         public function count(){

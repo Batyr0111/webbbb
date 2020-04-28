@@ -8,9 +8,9 @@
     else {
         $page = 1;
     }
-    $potimec = new PitomecMap();
-    $count = $potimec->count();
-    $potimeci = $potimec->findAll($page*$size-$size,$size);
+    $pitomec = new PitomecMap();
+    $count = $pitomec->count();
+    $pitomec = $pitomec->findAll($page*$size-$size,$size);
 
     ?> 
 <div class="row">
@@ -29,7 +29,7 @@
 <!-- /.box-header -->
 <div class="box-body">
 <?php
-if ($potimeci) {
+if ($pitomec) {
 ?>
 
 <table id="example2" class="table table-bordered table-hover">
@@ -50,20 +50,20 @@ if ($potimeci) {
 </thead>
 <tbody>
 <?php
-foreach ($potimeci as $potimec) {
+foreach ($pitomec as $pitomec) {
 echo '<tr>';
 echo '<td><a href="profile-
-pitomec.php?id='.$potimec->Номер_питомца.'">'.$potimec->Имя.'</a> '. '<a href="add-pitomec.php?id='.$potimec->Номер_питомца.'"><i class="fa fa-pencil"></i></a></td>';
+pitomec.php?id='.$pitomec->Номер_питомца.'">'.$pitomec->Имя.'</a> '. '<a href="add-pitomec.php?id='.$pitomec->Номер_питомца.'"><i class="fa fa-pencil"></i></a></td>';
 
-echo '<td>'.$potimec->Пол.'</td>';
+echo '<td>'.$pitomec->Пол.'</td>';
 
-echo '<td>'.$potimec->Дата_рождения.'</td>';
-echo '<td>'.$potimec->Вид_млекопитающего.'</td>';
-echo '<td>'.$potimec->Зона_обитания.'</td>';
-echo '<td>'.$potimec->Номер_сотрудника.'</td>';
-echo '<td>'.$potimec->Номер_Типа_Рациона.'</td>';
-echo '<td>'.$potimec->Код_сведения_животного.'</td>';
-echo '<td>'.$potimec->Номер_питомца.'</td>';
+echo '<td>'.$pitomec->Дата_рождения.'</td>';
+echo '<td>'.$pitomec->Вид_млекопитающего.'</td>';
+echo '<td>'.$pitomec->Зона_обитания.'</td>';
+echo '<td>'.$pitomec->Номер_сотрудника.'</td>';
+echo '<td>'.$pitomec->Номер_Типа_Рациона.'</td>';
+echo '<td>'.$pitomec->Код_сведения_животного.'</td>';
+echo '<td>'.$pitomec->Номер_питомца.'</td>';
 echo '</tr>';
 }
 ?>
